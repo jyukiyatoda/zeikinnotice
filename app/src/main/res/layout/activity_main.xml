@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/nouhuName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="納付する税金"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/zyuminzei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="住民税" />
+
+        <RadioButton
+            android:id="@+id/koteizei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="固定資産税" />
+
+        <RadioButton
+            android:id="@+id/keizei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="軽自動車税" />
+
+        <RadioButton
+            android:id="@+id/hokenzei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="国民健康保険税" />
+
+        <RadioButton
+            android:id="@+id/zyuhokenzei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="住民税・国民健康保険税" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/nouhuKigen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="納付期限"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="納付日を選択してください"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showDatePickerDialog"
+        android:text="日付を選択"/>
+
+    <TextView
+        android:id="@+id/memo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="メモ"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <EditText
+        android:id="@+id/memoform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="メモしておきたいことがあれば入力してください"/>
+
+    <Button
+        android:id="@+id/touroku"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登録"/>
+
+
+</LinearLayout>
