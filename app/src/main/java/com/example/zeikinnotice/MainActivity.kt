@@ -26,7 +26,7 @@ class MainActivity : FragmentActivity(),DatePickerDialog.OnDateSetListener {
 
     //日付の取得Calender
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
-        val  str=String.format(Locale.US,"%d%d%d",year,month+1,dayOfMonth)
+        val  str=String.format(Locale.US,"%d年%d月%d日",year,month+1,dayOfMonth)
         date.text=str
     }
     fun showDatePickerDialog(v:View){
@@ -39,6 +39,7 @@ class MainActivity : FragmentActivity(),DatePickerDialog.OnDateSetListener {
         override fun onClick(v: View?) {
             val editDate=findViewById<TextView>(R.id.date)
             val editMemoform=findViewById<EditText>(R.id.memoform)
+            val editNouhugakuform=findViewById<EditText>(R.id.nouhugakuform)
 
             val rg_zeikin:RadioGroup
             val rb_zyuminzei:RadioButton
@@ -71,6 +72,7 @@ class MainActivity : FragmentActivity(),DatePickerDialog.OnDateSetListener {
          val intent= Intent(applicationContext,SubActivity::class.java)
             intent.putExtra("Zeikin",index.toString())
             intent.putExtra("Date",editDate.text.toString())
+            intent.putExtra("Nouhugaku",editNouhugakuform.text.toString())
             intent.putExtra("Memo",editMemoform.text.toString())
             startActivity(intent)
         }

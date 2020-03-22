@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:text="納付期限"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"/>
     <TextView
         android:id="@+id/subdate"
@@ -39,12 +39,27 @@
         android:hint="納付期日を選択してください"/>
 
     <TextView
+        android:id="@+id/subnouhugakukoumoku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="納付金額"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/subnouhugaku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="納付金額を入力してください"/>
+
+    <TextView
         android:id="@+id/submemokoumoku"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
         android:text="メモ"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="10dp"/>
     <TextView
         android:id="@+id/submemo"
@@ -52,6 +67,13 @@
         android:layout_height="wrap_content"
         android:textSize="22sp"
         android:hint="メモをしておきたいことがあれば入力してください"/>
+
+    <Button
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBackButtonClick"
+        android:text="戻る"/>
 
 
 

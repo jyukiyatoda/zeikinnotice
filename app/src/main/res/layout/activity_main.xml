@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:text="納付する税金"
+        android:textStyle="bold"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"/>
 
@@ -58,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="納付期限"
+        android:textStyle="bold"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"/>
@@ -75,10 +77,30 @@
         android:text="日付を選択"/>
 
     <TextView
+        android:id="@+id/nouhugaku"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="納付金額"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"/>
+    <EditText
+        android:id="@+id/nouhugakuform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:inputType="number"
+        android:digits="0123456789.\-"
+        android:hint="納付金額を入力してください"/>
+
+
+    <TextView
         android:id="@+id/memo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="メモ"
+        android:textStyle="bold"
         android:textSize="20sp"
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"/>
